@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-parrot: #00ff00;
+  --color-parrot-50: #f2fff2;
+  --color-parrot-100: #dcffdc;
+  --color-parrot-200: #afffaf;
+  --color-parrot-300: #6efc6e;
+  --color-parrot-400: #2bf82b;
+  --color-parrot-500: #00ff00;
+  --color-parrot-600: #00c800;
+  --color-parrot-700: #009e00;
+  --color-parrot-800: #007a00;
+  --color-parrot-900: #005500;
+  --color-parrot-950: #002e00;
+
+  --color-emerald-50: #f2fff2;
+  --color-emerald-100: #dcffdc;
+  --color-emerald-200: #afffaf;
+  --color-emerald-300: #6efc6e;
+  --color-emerald-400: #2bf82b;
+  --color-emerald-500: #00ff00;
+  --color-emerald-600: #00c800;
+  --color-emerald-700: #009e00;
+  --color-emerald-800: #007a00;
+  --color-emerald-900: #005500;
+  --color-emerald-950: #002e00;
+
+  --color-teal-50: #f2fff2;
+  --color-teal-100: #dcffdc;
+  --color-teal-200: #afffaf;
+  --color-teal-300: #6efc6e;
+  --color-teal-400: #2bf82b;
+  --color-teal-500: #00ff00;
+  --color-teal-600: #00c800;
+  --color-teal-700: #009e00;
+  --color-teal-800: #007a00;
+  --color-teal-900: #005500;
+  --color-teal-950: #002e00;
+
+  --color-lime-50: #f2fff2;
+  --color-lime-100: #dcffdc;
+  --color-lime-200: #afffaf;
+  --color-lime-300: #6efc6e;
+  --color-lime-400: #2bf82b;
+  --color-lime-500: #00ff00;
+  --color-lime-600: #00c800;
+  --color-lime-700: #009e00;
+  --color-lime-800: #007a00;
+  --color-lime-900: #005500;
+  --color-lime-950: #002e00;
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.dark body {
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+/* Dark mode Recharts support */
+html.dark .recharts-default-tooltip {
+  background-color: #0f172a !important;
+  border: 1px solid #334155 !important;
+  color: #f8fafc !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+html.dark .recharts-tooltip-item {
+  color: #f8fafc !important;
+}
+
+html.dark .recharts-cartesian-grid line {
+  stroke: #334155 !important;
+  opacity: 0.4 !important;
+}
+
+html.dark .recharts-text {
+  fill: #94a3b8 !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+

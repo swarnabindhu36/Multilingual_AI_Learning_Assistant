@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10b981" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>LinguaLearn - Multilingual AI Learning Assistant</title>
+    <meta name="description" content="Context-aware multilingual AI educational assistant for technical and Computer Science concepts with terminology preservation and research evaluation." />
+    <meta property="og:title" content="LinguaLearn - Multilingual AI Learning Assistant" />
+    <meta property="og:description" content="Context-aware multilingual AI educational assistant for technical and Computer Science concepts with terminology preservation and research evaluation." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('lingualearn_theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || ((!saved || saved === 'system') && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

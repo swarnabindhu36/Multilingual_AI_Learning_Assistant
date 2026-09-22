@@ -1,0 +1,7 @@
+{
+  "name": "LinguaLearn - Multilingual AI Learning Assistant",
+  "description": "Context-aware multilingual AI educational assistant for technical and Computer Science concepts with terminology preservation and research evaluation.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
